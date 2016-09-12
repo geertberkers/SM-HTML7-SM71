@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KMTracker.CarView">
+	<StackLayout Orientation="Vertical">
+		<Label x:Name="Car" />
+		<Label x:Name="NumberPlate" />
+		<Label x:Name="Mileage" />
+		<Label Text="Rittenlijst:" />
+		<ListView x:Name="Rittenlijst"/>
+		<Button x:Name="gpsButton" Text="Get GPS location" />
+		<Label x:Name="locationLabel" Text="No GPS location found yet" />
+	</StackLayout>
+</ContentPage>

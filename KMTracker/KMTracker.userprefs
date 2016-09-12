@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Droid/KMTracker.Droid.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="KMTracker/KMTracker.cs">
+    <Files>
+      <File FileName="KMTracker/MainPage.cs" Line="107" Column="32" />
+      <File FileName="Droid/GetMyLocation.cs" Line="12" Column="33" />
+      <File FileName="KMTracker/KMTracker.cs" Line="17" Column="4" />
+      <File FileName="packages/Xam.Plugin.Geolocator.3.0.4/readme.txt" Line="9" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.KMTracker.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.KMTracker.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C2A0CEBE-B4CD-4B40-8BA7-9DA49982B0CC" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
