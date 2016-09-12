@@ -123,6 +123,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Maps.dll",
 		"Xamarin.Forms.Maps.Android.dll",
 		"Xamarin.Forms.Maps.dll",
+		"PCLStorage.dll",
+		"PCLStorage.Abstractions.dll",
 		"KMTracker.dll",
 		"System.ServiceModel.Internals.dll",
 		"System.Threading.dll",

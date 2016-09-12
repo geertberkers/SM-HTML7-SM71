@@ -6,7 +6,8 @@
 		<Label x:Name="Mileage" />
 		<Label Text="Rittenlijst:" />
 		<ListView x:Name="Rittenlijst"/>
+		<Label x:Name="trackingLabel" />
 		<Button x:Name="gpsButton" Text="Get GPS location" />
-		<Label x:Name="locationLabel" Text="No GPS location found yet" />
+		<Label x:Name="locationLabel" Text="No GPS location found yet" HorizontalOptions="Center" />
 	</StackLayout>
 </ContentPage>

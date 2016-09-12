@@ -1,15 +1,19 @@
 ﻿<Properties StartupItem="Droid/KMTracker.Droid.csproj">
   <MonoDevelop.Ide.Workbench ActiveDocument="KMTracker/CarView.xaml.cs">
     <Files>
-      <File FileName="KMTracker/CarMenu.cs" Line="36" Column="5" />
-      <File FileName="KMTracker/CarView.xaml.cs" Line="47" Column="4" />
-      <File FileName="KMTracker/Car.cs" Line="1" Column="1" />
+      <File FileName="KMTracker/CarMenu.cs" Line="64" Column="34" />
+      <File FileName="KMTracker/CarView.xaml.cs" Line="97" Column="1" />
+      <File FileName="KMTracker/RitView.xaml.cs" Line="12" Column="1" />
+      <File FileName="KMTracker/RitView.xaml" Line="4" Column="93" />
+      <File FileName="KMTracker/CarView.xaml" Line="10" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.KMTracker.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.KMTracker.Droid PreferredExecutionTarget="Android.b53eb227" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/CarView.xaml.cs" line="97" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.KMTracker.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C2A0CEBE-B4CD-4B40-8BA7-9DA49982B0CC" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

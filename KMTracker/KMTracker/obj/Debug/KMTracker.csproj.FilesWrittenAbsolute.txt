@@ -16,3 +16,5 @@
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/Plugin.Geolocator.Abstractions.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/Xamarin.Forms.Maps.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/Guards.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/PCLStorage.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/PCLStorage.Abstractions.dll

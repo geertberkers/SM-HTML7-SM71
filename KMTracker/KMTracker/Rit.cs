@@ -9,7 +9,7 @@ namespace KMTracker
 			get;
 		}
 
-		List<Coordinate> Coordinates
+		public List<Coordinate> Coordinates
 		{
 			get;
 		}

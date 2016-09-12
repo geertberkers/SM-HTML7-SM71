@@ -27,6 +27,8 @@
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/Xamarin.GooglePlayServices.Maps.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/Xamarin.Forms.Maps.Android.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/Xamarin.Forms.Maps.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/PCLStorage.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/PCLStorage.Abstractions.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/KMTracker.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/mscorlib.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Runtime.Serialization.dll

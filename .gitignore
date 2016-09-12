@@ -4,6 +4,46 @@
 # Build/test output
 [Oo]bj/
 [Bb]in/
+KMTracker/Droid/obj/
+KMTracker/Droid/bin/
+KMTracker/iOS/obj/
+KMTracker/iOS/bin/
+TestResults/#Autosave files
+*~
+
+# Build/test output
+obj
+bin
+test-results
+KMTracker/Droid/obj
+KMTracker/Droid/bin
+KMTracker/iOS/obj
+KMTracker/iOS/bin
+
+# VS sometimes writes these for no apparent reason
+_UpgradeReport_Files
+UpgradeLog.*
+
+# Per-user data
+*.DS_Store
+*.sln.cache
+*.suo
+*.userprefs
+*.usertasks
+*.user
+
+# ReSharper
+*_Resharper.*
+*.Resharper
+
+# dotCover
+*.dotCover
+#Autosave files
+*~
+
+# Build/test output
+[Oo]bj/
+[Bb]in/
 TestResults/
 
 # VS sometimes writes these for no apparent      reason
@@ -54,3 +94,4 @@ Thumbs.db
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 !**/packages/repositories.config
+

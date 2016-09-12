@@ -38,5 +38,7 @@
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/Xamarin.GooglePlayServices.Maps.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/Xamarin.Forms.Maps.Android.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/Xamarin.Forms.Maps.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/PCLStorage.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/PCLStorage.Abstractions.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/KMTracker.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/KMTracker.dll.mdb

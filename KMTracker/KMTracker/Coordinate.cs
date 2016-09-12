@@ -1,24 +1,16 @@
-﻿namespace KMTracker
+﻿using System;
+
+namespace KMTracker
 {
 	public class Coordinate
 	{
 		public double Longitude;
 		public double Latitude;
 
-		public Coordinate(double longitude, double latitude)
+		public Coordinate(double latitude, double longitude)
 		{
 			this.Longitude = longitude;
 			this.Latitude = latitude;
-		}
-
-		public double GetLongitude()
-		{
-			return Longitude;
-		}
-
-		public double GetLatitude()
-		{
-			return Latitude;
 		}
 	}
 }

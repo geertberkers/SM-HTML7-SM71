@@ -29,6 +29,9 @@ namespace KMTracker {
         private global::Xamarin.Forms.ListView Rittenlijst;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label trackingLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button gpsButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -41,6 +44,7 @@ namespace KMTracker {
             NumberPlate = this.FindByName <global::Xamarin.Forms.Label>("NumberPlate");
             Mileage = this.FindByName <global::Xamarin.Forms.Label>("Mileage");
             Rittenlijst = this.FindByName <global::Xamarin.Forms.ListView>("Rittenlijst");
+            trackingLabel = this.FindByName <global::Xamarin.Forms.Label>("trackingLabel");
             gpsButton = this.FindByName <global::Xamarin.Forms.Button>("gpsButton");
             locationLabel = this.FindByName <global::Xamarin.Forms.Label>("locationLabel");
         }
