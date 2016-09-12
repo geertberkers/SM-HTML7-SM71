@@ -26,6 +26,10 @@ namespace KMTracker.Droid
 			// Init Maps
 			Xamarin.FormsMaps.Init(this, bundle);
 
+			// Set Screen Width and Height
+			App.ScreenWidth = (Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+			App.ScreenHeight = (Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
+
 			LoadApplication(new App());
 		}
 	}

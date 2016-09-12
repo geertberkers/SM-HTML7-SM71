@@ -1,11 +1,12 @@
-﻿using System;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace KMTracker
 {
 	public class App : Application
 	{
+		public static double ScreenWidth { get; set; }
+		public static double ScreenHeight { get; set; }
+
 		public App()
 		{			
 			// The root page of your application

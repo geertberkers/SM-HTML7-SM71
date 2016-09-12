@@ -20,6 +20,10 @@ namespace KMTracker.iOS
 
 			LoadApplication(new App());
 
+			// Set Screen Width and Height
+			App.ScreenWidth = UIScreen.MainScreen.Bounds.Width;
+			App.ScreenHeight = UIScreen.MainScreen.Bounds.Height;
+
 			return base.FinishedLaunching(app, options);
 		}
 	}

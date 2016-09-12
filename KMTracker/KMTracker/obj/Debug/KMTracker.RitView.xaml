@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="TEST" x:Class="KMTracker.RitView">
-	<StackLayout x:Name="stackLayout">
-		<Label x:Name="description" HorizontalOptions="Center" FontAttributes="Bold" FontSize="25" />
-	</StackLayout>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:KMTracker;assembly=KMTracker" Title="TEST" x:Class="KMTracker.RitView">
+	<RelativeLayout>
+		<local:CustomMap x:Name="customMap" MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}" />
+		<Label x:Name="description" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+	</RelativeLayout>
 </ContentPage>

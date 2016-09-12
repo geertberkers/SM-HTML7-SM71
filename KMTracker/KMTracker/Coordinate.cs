@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace KMTracker
+﻿namespace KMTracker
 {
 	public class Coordinate
 	{
@@ -9,8 +7,8 @@ namespace KMTracker
 
 		public Coordinate(double latitude, double longitude)
 		{
-			this.Longitude = longitude;
-			this.Latitude = latitude;
+			Longitude = longitude;
+			Latitude = latitude;
 		}
 	}
 }

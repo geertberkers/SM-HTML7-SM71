@@ -14,6 +14,8 @@ namespace KMTracker
 		bool isTracking = false;
 		List<Coordinate> coordinates;
 
+		DataTemplate dataTemplate;
+
 		public CarView(CarMenu menu, Car car)
 		{
 			InitializeComponent();
@@ -26,7 +28,7 @@ namespace KMTracker
 			NumberPlate.Text = car.NumberPlate;
 			Mileage.Text = car.MileAge.ToString("F1");
 
-			var dataTemplate = new DataTemplate(typeof(TextCell));
+			dataTemplate = new DataTemplate(typeof(TextCell));
 			dataTemplate.SetBinding(TextCell.TextProperty, "Description");
 
 			Rittenlijst.ItemsSource = selectedCar.Ritten;
@@ -49,22 +51,31 @@ namespace KMTracker
 		{
 			isTracking = !isTracking;
 
-			trackingLabel.Text = "Currently tracking: " + isTracking.ToString();
+			trackingLabel.Text = "Currently tracking: " + isTracking;
 
 			// Start tracking
 			if (isTracking)
 			{
-				gpsButton.Text = "Tracking GPS";
+				gpsButton.Text = "Stop rit!";
 				StartTracking();
 			}
 			else {
-				gpsButton.Text = "Track GPS";
+				gpsButton.Text = "Start rit!";
 				locationLabel.Text = "No GPS location found yet";
 
-				StopTracking();
+				//TODO: Check if you actually traveled, else dont add it.
+				if (coordinates.Count >= 5)
+				{
+					var description = "TestRit";
+					selectedCar.Ritten.Add(new Rit(description, coordinates));
+					Rittenlijst.ItemsSource = selectedCar.Ritten;
+					Rittenlijst.ItemTemplate = dataTemplate;
+
+					StopTracking();
+				}
 			}
 		}
-
+		
 		async void StartTracking()
 		{
 			await TrackGPS();
@@ -87,16 +98,17 @@ namespace KMTracker
 
 				var position = await locator.GetPositionAsync(timeoutMilliseconds: 60000);
 
-				System.Diagnostics.Debug.WriteLine("Position Status: {0}", position.Timestamp);
-				System.Diagnostics.Debug.WriteLine("Position Latitude: {0}", position.Latitude);
-				System.Diagnostics.Debug.WriteLine("Position Longitude: {0}", position.Longitude);
-
-				coordinates.Add(new Coordinate(position.Longitude, position.Latitude));
-
-				locationLabel.Text = "Current GPS location: " + position.Latitude + " / " + position.Longitude;
-
+				// New if statement, because tracking can be stopped before it reaches this code
 				if (isTracking)
 				{
+					System.Diagnostics.Debug.WriteLine("Position Status: {0}", position.Timestamp);
+					System.Diagnostics.Debug.WriteLine("Position Latitude: {0}", position.Latitude);
+					System.Diagnostics.Debug.WriteLine("Position Longitude: {0}", position.Longitude);
+					//TODO: First corodinate get street
+					coordinates.Add(new Coordinate(position.Latitude, position.Longitude));
+
+					locationLabel.Text = "Current GPS location: " + position.Latitude + " / " + position.Longitude;
+
 					//TODO: Wait a few seconds before tracking again, else a lot of data
 					await TrackGPS();
 				}
@@ -120,14 +132,6 @@ namespace KMTracker
 
 		protected override bool OnBackButtonPressed()
 		{
-			//TODO: Check if you actually traveled, else dont add it.
-
-			if (coordinates.Count >= 3)
-			{
-				var description = "TestRit";
-				selectedCar.Ritten.Add(new Rit(description, coordinates));
-			}
-
 			Application.Current.MainPage = carMenu;
 
 			return true;

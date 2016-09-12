@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 
 namespace KMTracker
 {
@@ -49,6 +51,7 @@ namespace KMTracker
 			Content = view;
 		}
 
+		//TODO: Replace with data from server
 		void GenerateTestData()
 		{
 			cars = new List<Car> {
@@ -207,7 +210,8 @@ namespace KMTracker
 			reversedOrder.AddRange(coordinates);
 			coordinates.Reverse();
 
-			foreach(Car car in cars){
+			foreach (Car car in cars)
+			{
 				car.Ritten.Add(new Rit("School -> Station", coordinates));
 				coordinates.Reverse();
 				car.Ritten.Add(new Rit("Station -> School", reversedOrder));

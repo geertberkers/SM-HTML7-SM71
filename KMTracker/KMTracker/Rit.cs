@@ -14,11 +14,10 @@ namespace KMTracker
 			get;
 		}
 
-
 		public Rit(string description, List<Coordinate> coordinates)
 		{
-			this.Description = description;
-			this.Coordinates = coordinates;
+			Description = description;
+			Coordinates = coordinates;
 		}
 	}
 }

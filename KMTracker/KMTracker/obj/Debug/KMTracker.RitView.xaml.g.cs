@@ -17,7 +17,7 @@ namespace KMTracker {
     public partial class RitView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.StackLayout stackLayout;
+        private global::KMTracker.CustomMap customMap;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label description;
@@ -25,7 +25,7 @@ namespace KMTracker {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RitView));
-            stackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("stackLayout");
+            customMap = this.FindByName <global::KMTracker.CustomMap>("customMap");
             description = this.FindByName <global::Xamarin.Forms.Label>("description");
         }
     }
