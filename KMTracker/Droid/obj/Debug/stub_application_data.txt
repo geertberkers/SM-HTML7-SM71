@@ -1,2 +1,0 @@
-android.app.Application
-geert.berkers.km_tracker
