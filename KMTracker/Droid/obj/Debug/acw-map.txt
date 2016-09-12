@@ -6,6 +6,10 @@ KMTracker.Droid.MainApplication, KMTracker.Droid;md50ba5caa860d90c94235dabed4e9f
 KMTracker.Droid.MainApplication, KMTracker.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ba5caa860d90c94235dabed4e9f2af0.MainApplication
 KMTracker.Droid.MainApplication;md50ba5caa860d90c94235dabed4e9f2af0.MainApplication
 kmtracker.droid.MainApplication;md50ba5caa860d90c94235dabed4e9f2af0.MainApplication
+KMTracker.Droid.CustomMapRenderer, KMTracker.Droid;md50ba5caa860d90c94235dabed4e9f2af0.CustomMapRenderer
+KMTracker.Droid.CustomMapRenderer, KMTracker.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ba5caa860d90c94235dabed4e9f2af0.CustomMapRenderer
+KMTracker.Droid.CustomMapRenderer;md50ba5caa860d90c94235dabed4e9f2af0.CustomMapRenderer
+kmtracker.droid.CustomMapRenderer;md50ba5caa860d90c94235dabed4e9f2af0.CustomMapRenderer
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

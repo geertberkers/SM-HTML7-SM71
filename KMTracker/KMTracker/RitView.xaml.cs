@@ -5,7 +5,18 @@ namespace KMTracker
 {
 	public partial class RitView : ContentPage
 	{
-		
+
+		public Pin createPin(Position position, string label, string address)
+		{
+			return new Pin
+			{
+				Type = PinType.Place,
+				Position = position,
+				Label = label,
+				Address = address
+			};			
+		}
+
 		public RitView(CarView carView, Rit rit)
 		{
 			InitializeComponent();
@@ -15,39 +26,39 @@ namespace KMTracker
 			var longitudeCount = 0.0;
 			var counter = 0;
 
+			var customMap = new CustomMap
+			{
+				MapType = MapType.Street,
+				WidthRequest = 960,
+				HeightRequest = 100
+			};
+
 			foreach (Coordinate coordinate in rit.Coordinates)
 			{
 				latitudeCount += coordinate.Latitude;
 				longitudeCount += coordinate.Longitude;
 				counter++;
+
+				var position = new Position(coordinate.Latitude, coordinate.Longitude);
+				customMap.RouteCoordinates.Add(position);
+
+				if (counter == 1)
+				{
+					customMap.Pins.Add(createPin(position, "Start", ""));
+				}
+
+				if (counter == rit.Coordinates.Count)
+				{
+					customMap.Pins.Add(createPin(position, "End", ""));
+				}
 			}
 
 			var averageLatitude = latitudeCount / counter;
 			var averageLongitude = longitudeCount / counter;
 
-			var map = new Map(MapSpan.FromCenterAndRadius(new Position(averageLatitude, averageLongitude), Distance.FromMiles(0.3)))
-			{
-				IsShowingUser = true,
-				HeightRequest = 100,
-				WidthRequest = 960,
-				VerticalOptions = LayoutOptions.FillAndExpand
-			};
-
-			foreach (Coordinate coordinate in rit.Coordinates)
-			{
-				//TODO: Remove points, add line
-				var position = new Position(coordinate.Latitude, coordinate.Longitude); // Latitude, Longitude
-				var pin = new Pin
-				{
-					Type = PinType.Place,
-					Position = position,
-					Label = "Point " + rit.Coordinates.FindIndex((obj) => obj == coordinate),//.Latitude == coordinate.Latitude),
-					Address = "custom detail info"
-				};
-				map.Pins.Add(pin);
-			}
-
-			stackLayout.Children.Add(map);
+			customMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(averageLatitude, averageLongitude), Distance.FromMiles(0.3)));
+		
+			stackLayout.Children.Add(customMap);
 		}
 
 	}

@@ -202,10 +202,16 @@ namespace KMTracker
 			coordinates.Add(new Coordinate(51.44365875, 5.47773078));
 			coordinates.Add(new Coordinate(51.44363326, 5.47776524));
 
+			List<Coordinate> reversedOrder = new List<Coordinate>();
+			coordinates.Reverse();
+			reversedOrder.AddRange(coordinates);
+			coordinates.Reverse();
+
 			foreach(Car car in cars){
 				car.Ritten.Add(new Rit("School -> Station", coordinates));
 				coordinates.Reverse();
-				car.Ritten.Add(new Rit("Station -> School", coordinates));
+				car.Ritten.Add(new Rit("Station -> School", reversedOrder));
+				coordinates.Reverse();
 			}
 		}
 
