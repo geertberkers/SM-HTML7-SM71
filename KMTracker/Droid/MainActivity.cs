@@ -20,7 +20,11 @@ namespace KMTracker.Droid
 
 			base.OnCreate(bundle);
 
-			global::Xamarin.Forms.Forms.Init(this, bundle);
+			// Init Xamarin Forms
+			Xamarin.Forms.Forms.Init(this, bundle);
+
+			// Init Maps
+			Xamarin.FormsMaps.Init(this, bundle);
 
 			LoadApplication(new App());
 		}

@@ -12,7 +12,11 @@ namespace KMTracker.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init();
+			//Init Xamarin Forms
+			Xamarin.Forms.Forms.Init();
+
+			//Init Maps
+			Xamarin.FormsMaps.Init();
 
 			LoadApplication(new App());
 

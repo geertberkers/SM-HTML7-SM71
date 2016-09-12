@@ -44,5 +44,7 @@
 	<string>Assets.xcassets/AppIcons.appiconset</string>
 	<key>NSWhenInUseUsageDescription</key>
 	<string>Allow application to obtain your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Can we use your location</string>
 </dict>
 </plist>
