@@ -104,7 +104,7 @@ namespace KMTracker
 					System.Diagnostics.Debug.WriteLine("Position Status: {0}", position.Timestamp);
 					System.Diagnostics.Debug.WriteLine("Position Latitude: {0}", position.Latitude);
 					System.Diagnostics.Debug.WriteLine("Position Longitude: {0}", position.Longitude);
-					//TODO: First corodinate get street
+
 					coordinates.Add(new Coordinate(position.Latitude, position.Longitude));
 
 					locationLabel.Text = "Current GPS location: " + position.Latitude + " / " + position.Longitude;

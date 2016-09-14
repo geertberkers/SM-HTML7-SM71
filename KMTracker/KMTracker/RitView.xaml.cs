@@ -54,7 +54,7 @@ namespace KMTracker
 			foreach (Coordinate coordinate in rit.Coordinates)
 			{
 				counter++;
-				var position = new Position(coordinate.Latitude, coordinate.Longitude);
+				var position = new Position(coordinate.Latitude.latitude, coordinate.Longitude.longitude);
 				if (counter == 1)
 				{
 					customMap.Pins.Add(createPin(position, "Start", ""));
@@ -68,8 +68,8 @@ namespace KMTracker
 					GetAddressAddPoint(position, "Eind");
 				}
 
-				latitudeCount += coordinate.Latitude;
-				longitudeCount += coordinate.Longitude;
+				latitudeCount += coordinate.Latitude.latitude;
+				longitudeCount += coordinate.Longitude.longitude;
 
 				customMap.RouteCoordinates.Add(position);
 			}

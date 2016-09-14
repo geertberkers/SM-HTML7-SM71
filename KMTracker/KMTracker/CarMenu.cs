@@ -10,16 +10,23 @@ namespace KMTracker
 	{
 		List<Car> cars;
 		Button addCarButton;
+		RestService restService;
+		DataTemplate dataTemplate;
+		ListView listView;
 
 		public CarMenu()
 		{
 			Padding = new Thickness(20);
 
-			GenerateTestData();
+			//GenerateTestData();
 
-			var dataTemplate = new DataTemplate(typeof(CarCell));
+			restService = new RestService();
 
-			var listView = new ListView
+			getCars();
+
+			dataTemplate = new DataTemplate(typeof(CarCell));
+
+		 	listView = new ListView
 			{
 				ItemsSource = cars,
 				ItemTemplate = dataTemplate
@@ -49,6 +56,13 @@ namespace KMTracker
 			};
 
 			Content = view;
+		}
+
+		async void getCars()
+		{
+			cars = await restService.GetCarsAsync();
+			listView.ItemsSource = cars;
+			listView.ItemTemplate = dataTemplate;
 		}
 
 		//TODO: Replace with data from server
@@ -221,6 +235,8 @@ namespace KMTracker
 
 		internal void AddCar(Car car)
 		{
+			// Todo: add to server
+			// http://localhost:1337/car/create?name=Opel%20Astra&numberPlate=99-ABC-9
 			cars.Add(car);
 		}
 

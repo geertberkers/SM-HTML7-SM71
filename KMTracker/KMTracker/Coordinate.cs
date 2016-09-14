@@ -2,13 +2,20 @@
 {
 	public class Coordinate
 	{
-		public double Longitude;
-		public double Latitude;
+		public Longitude Longitude;
+		public Latitude Latitude;
 
-		public Coordinate(double latitude, double longitude)
+
+		public Coordinate(Latitude latitude, Longitude longitude)
 		{
 			Longitude = longitude;
 			Latitude = latitude;
+		}
+
+		public Coordinate(double v1, double v2)
+		{
+			Longitude = new Longitude { longitude = v1 };
+			Latitude = new Latitude { latitude = v2 };
 		}
 	}
 }

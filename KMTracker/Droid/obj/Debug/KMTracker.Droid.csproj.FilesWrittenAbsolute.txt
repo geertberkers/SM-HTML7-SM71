@@ -42,3 +42,4 @@
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/PCLStorage.Abstractions.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/KMTracker.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/KMTracker.dll.mdb
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/bin/Debug/Newtonsoft.Json.dll

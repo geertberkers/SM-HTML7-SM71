@@ -18,3 +18,7 @@
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/Guards.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/PCLStorage.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/PCLStorage.Abstractions.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/System.Net.Http.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/System.Net.Http.Primitives.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/System.Net.Http.Extensions.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/bin/Debug/Newtonsoft.Json.dll

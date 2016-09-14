@@ -56,3 +56,11 @@
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Text.RegularExpressions.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Resources.ResourceManager.dll
 /Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Diagnostics.Tools.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/Newtonsoft.Json.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Xml.XDocument.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Xml.Linq.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Runtime.Serialization.Primitives.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Text.Encoding.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/System.Text.Encoding.Extensions.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/Microsoft.CSharp.dll
+/Users/fhict/Github/SM-HTML7-SM71/KMTracker/Droid/obj/Debug/android/assets/Mono.CSharp.dll
