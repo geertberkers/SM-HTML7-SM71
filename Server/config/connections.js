@@ -42,6 +42,12 @@ module.exports.connections = {
   *                                                                          *
   ***************************************************************************/
 
+  remotePostgresDatabase: {
+    adapter: 'sails-postgresql',
+    url: 'postgres://yceakinmwtzekf:lBmKA9YYv0_ELeVs9J_EV9uEg1@ec2-54-243-54-21.compute-1.amazonaws.com:5432/dd0ursha4tr0il',
+    ssl : true
+  },
+
   localPostgresDatabase: {
     adapter: 'sails-postgresql',
     host: '127.0.0.1',
