@@ -11,22 +11,17 @@ module.exports = {
   autoUpdatedAt: false,
 
   attributes: {
-/*
+
     rit: {
-      model: 'Rit',
-      via: 'coordinates'
-    },*/
+      model: 'rit'
+    },
 
-  	latitude: {
-  		model: 'Latitude',
-  		required: true,
-  //    via: 'coordinate'
-  	},
+    latitude: {
+      type: 'string'
+    },
 
-	  longitude: {
-  		model: 'Longitude',
-  		required: true,
- //     via: 'coordinate'
+    longitude: {
+      type: 'string'
     }
 
   }

@@ -7,21 +7,30 @@
 
 module.exports = {
 
-  autoCreatedAt: false,
+  autoUpdatedAt: false,
+  createdAt: false,
 
   attributes: {
 
-    car: {
-      model: 'Car'
+    id: {
+      type: 'integer',
+      primaryKey: true,
+    },
+
+    car:{
+      model: 'car'
     },
 
   	description:{
   		type: 'string'
   	},
 
-  	listCoordinates: {
-  		collection: 'Coordinate'
+    // Add reference to
+    coordinates: {
+  		collection: 'coordinate',
+      via: 'rit'
   	}
+
   }
 };
 

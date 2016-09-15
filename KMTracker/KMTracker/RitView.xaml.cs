@@ -51,10 +51,16 @@ namespace KMTracker
 			var longitudeCount = 0.0;
 			var counter = 0;
 
+			// Dont try to draw a map if there are no coordinates
+			if (rit.Coordinates.Count == 0)
+			{
+				return;
+			}
+			
 			foreach (Coordinate coordinate in rit.Coordinates)
 			{
 				counter++;
-				var position = new Position(coordinate.Latitude.latitude, coordinate.Longitude.longitude);
+				var position = new Position(coordinate.Latitude, coordinate.Longitude);
 				if (counter == 1)
 				{
 					customMap.Pins.Add(createPin(position, "Start", ""));
@@ -68,8 +74,8 @@ namespace KMTracker
 					GetAddressAddPoint(position, "Eind");
 				}
 
-				latitudeCount += coordinate.Latitude.latitude;
-				longitudeCount += coordinate.Longitude.longitude;
+				latitudeCount += coordinate.Latitude;
+				longitudeCount += coordinate.Longitude;
 
 				customMap.RouteCoordinates.Add(position);
 			}

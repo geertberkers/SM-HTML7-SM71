@@ -2,24 +2,18 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="KMTracker/CarMenu.cs">
     <Files>
       <File FileName="KMTracker/CarMenu.cs" Line="220" Column="46" />
-      <File FileName="KMTracker/RestService.cs" Line="29" Column="1" />
-      <File FileName="KMTracker/Constants.cs" Line="7" Column="3" />
-      <File FileName="KMTracker/Car.cs" Line="1" Column="1" />
-      <File FileName="KMTracker/Coordinate.cs" Line="16" Column="4" />
-      <File FileName="KMTracker/Longitude.cs" Line="5" Column="3" />
-      <File FileName="KMTracker/Latitude.cs" Line="5" Column="25" />
-      <File FileName="KMTracker/CarCell.cs" Line="1" Column="1" />
-      <File FileName="KMTracker/Rit.cs" Line="1" Column="1" />
+      <File FileName="KMTracker/RestService.cs" Line="69" Column="5" />
+      <File FileName="KMTracker/Rit.cs" Line="17" Column="8" />
+      <File FileName="KMTracker/RitView.xaml.cs" Line="54" Column="57" />
+      <File FileName="KMTracker/CarView.xaml.cs" Line="46" Column="1" />
+      <File FileName="KMTracker/Constants.cs" Line="7" Column="74" />
+      <File FileName="KMTracker/Coordinate.cs" Line="7" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.KMTracker.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/RestService.cs" line="26" column="1" />
-      <Breakpoint file="/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/RestService.cs" line="29" column="1" />
-      <Breakpoint file="/Users/fhict/Github/SM-HTML7-SM71/KMTracker/KMTracker/CarMenu.cs" line="65" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.KMTracker.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C2A0CEBE-B4CD-4B40-8BA7-9DA49982B0CC" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

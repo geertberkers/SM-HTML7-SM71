@@ -47,7 +47,7 @@ module.exports.connections = {
     host: '127.0.0.1',
     user: 'postgres',
     password: 'fhict',
-    database: 'KMTracker1'
+    database: 'KMTracker'
   }
 
   /***************************************************************************

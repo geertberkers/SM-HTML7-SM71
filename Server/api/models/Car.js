@@ -7,26 +7,31 @@
 
 module.exports = {
 
+  autoUpdatedAt: false,
+  autoCreatedAt: false,
+
   attributes: {
-  	name: {
-  		type: 'string',
-  		required: true
-  	},
 
-  	numberPlate: {
-  		type: 'string',
-  		required: true,
-  		primaryKey: true
-  	},
+    name: {
+      type: 'string',
+      required: true
+    },
 
-  	mileAge: {
-  		type: 'double'
-  	},
+    numberPlate: {
+      type: 'string',
+      required: true,
+      primaryKey: true
+    },
 
-  	ritten: {
-  		collection: 'Rit'
-  	}
+    mileAge: {
+      type: 'string'
+    },
 
+    //Add reference to Ritten
+    ritten: {
+      collection: 'rit',
+      via: 'car'
+    }
   }
 };
 
