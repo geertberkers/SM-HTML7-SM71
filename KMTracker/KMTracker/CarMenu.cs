@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
 
 namespace KMTracker
 {
@@ -13,12 +10,12 @@ namespace KMTracker
 		RestService restService;
 		DataTemplate dataTemplate;
 		ListView listView;
+		ActivityIndicator indicator;
+		Label carsLabel;
 
 		public CarMenu()
 		{
 			Padding = new Thickness(20);
-
-			//GenerateTestData();
 
 			restService = new RestService();
 
@@ -47,9 +44,18 @@ namespace KMTracker
 			addCarButton.Text = "Add Car";
 			addCarButton.Clicked += (s, e) => AddCarButtonClicked();
 
+		 	indicator = new ActivityIndicator() { IsRunning = true, Color = Color.Red };
+			carsLabel = new Label { Text = "Loading cars" };
+			//carsLabel.IsVisible = false;
+			carsLabel.FontSize = 24;
+			carsLabel.HorizontalOptions = LayoutOptions.Center;
+			carsLabel.FontAttributes = FontAttributes.Bold;
+
 			var view = new StackLayout
 			{
 				Children = {
+					carsLabel,
+					indicator,
 					listView,
 					addCarButton
 				}
@@ -63,6 +69,9 @@ namespace KMTracker
 			cars = await restService.GetCarsAsync();
 			listView.ItemsSource = cars;
 			listView.ItemTemplate = dataTemplate;
+			indicator.IsRunning = false;
+			indicator.IsVisible = false;
+			carsLabel.Text = "Select a car:";
 		}
 
 		internal void AddCar(Car car)

@@ -46,6 +46,8 @@ namespace KMTracker
 			InitializeComponent();
 			description.Text = rit.Description;
 
+			this.Title = rit.Description;
+
 			geocoder = new Geocoder();
 			var latitudeCount = 0.0;
 			var longitudeCount = 0.0;

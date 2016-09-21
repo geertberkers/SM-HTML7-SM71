@@ -26,7 +26,7 @@ namespace KMTracker
 
 			Car.Text = car.Name;
 			NumberPlate.Text = car.NumberPlate;
-			Mileage.Text = car.MileAge.ToString("F1");
+			Mileage.Text = car.MileAge.ToString("F1") + " KM";
 
 			dataTemplate = new DataTemplate(typeof(TextCell));
 			dataTemplate.SetBinding(TextCell.TextProperty, "Description");

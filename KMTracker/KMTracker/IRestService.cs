@@ -5,7 +5,6 @@ namespace KMTracker
 {
 	public interface IRestService
 	{
-
 		Task<List<Car>> GetCarsAsync();
 	}
 }

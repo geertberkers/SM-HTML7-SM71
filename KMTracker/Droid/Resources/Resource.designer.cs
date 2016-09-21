@@ -26,9 +26,9 @@ namespace KMTracker.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::KMTracker.Droid.Resource.Attribute.actionBarSize;
 			global::PCLStorage.Resource.String.ApplicationName = global::KMTracker.Droid.Resource.String.ApplicationName;
 			global::PCLStorage.Resource.String.Hello = global::KMTracker.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::KMTracker.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

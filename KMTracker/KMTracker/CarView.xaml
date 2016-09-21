@@ -1,13 +1,37 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KMTracker.CarView">
-	<StackLayout Orientation="Vertical">
-		<Label x:Name="Car" />
-		<Label x:Name="NumberPlate" />
-		<Label x:Name="Mileage" />
-		<Label Text="Rittenlijst:" />
-		<ListView x:Name="Rittenlijst"/>
-		<Label x:Name="trackingLabel" />
-		<Button x:Name="gpsButton" Text="Start rit!" />
-		<Label x:Name="locationLabel" Text="No GPS location found yet" HorizontalOptions="Center" />
-	</StackLayout>
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="CarLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="Black" />
+				<Setter Property="FontSize" Value="30" />
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="Font" Value="Bold" />
+			</Style>
+			<Style x:Key="CarInfoLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="Black" />
+				<Setter Property="FontSize" Value="20" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<Label x:Name="Car" Style="{StaticResource CarLabel}" />
+			<StackLayout Orientation="Horizontal">
+				<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+					<Label Text="Kenteken:" Style="{StaticResource CarInfoLabel}" />
+					<Label Text="Kilometerstand:" Style="{StaticResource CarInfoLabel}" />
+				</StackLayout>
+				<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+					<Label x:Name="NumberPlate" Style="{StaticResource CarInfoLabel}" />
+					<Label x:Name="Mileage" Style="{StaticResource CarInfoLabel}" />
+				</StackLayout>
+			</StackLayout>
+			<Label Text="Rittenlijst:" Style="{StaticResource CarInfoLabel}" />
+			<ListView x:Name="Rittenlijst" />
+			<Label x:Name="trackingLabel" />
+			<Button x:Name="gpsButton" Text="Start rit!" />
+			<Label x:Name="locationLabel" Text="No GPS location found yet" HorizontalOptions="Center" />
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>
